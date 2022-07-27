@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Image from './image';
+import Certificate from './certificate2.png'
 import DarkModeToggle from "react-dark-mode-toggle";
 import ProfessionalSkill from './ProfessionalSkill';
 
@@ -72,6 +73,10 @@ function Home() {
                             <ProfessionalSkill />
                     </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br/>
                     <div className='col-sm-12'>
+                         <h2 className='myskill'>Certificates</h2><br></br>
+                         <img className='certificate' src={Certificate} alt='certificate'/>
+                    </div>
+                    <div className='col-sm-12 top'>
                         <h2 className='myskills'>Projects</h2>
                         <br />
                         <table className={isDarkMode?'table table-dark table-striped':'table table-light table-striped'}>

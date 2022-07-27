@@ -223,3 +223,10 @@ h2{
   display: flex;
   justify-content: space-around;
 }
+
+.certificate{
+  width: 100%;
+}
+.top{
+  margin-top: 20px;
+}
