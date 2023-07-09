@@ -3,6 +3,7 @@
 *{
   user-select: none;
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -67,10 +68,10 @@ code {
     font-size: 0.5vw;
   }
   .wave-bg{
-    width: auto;
+    width: 100%;
   }
   .wave-bg-dark{
-    width: auto;
+    width: 100%;
   }
 }
 .nav-container{
@@ -158,12 +159,12 @@ h2{
 }
 .wave-bg{
   display: block;
-  height: 220px;
+  height: 200px;
   width: 100%;
-  /* min-width: 300px; */
   transform-origin: top;
   animation: animateWave 2000ms cubic-bezier(.23,1,.32,1) forwards;
   background-image: url('https://demo.templateflip.com/super/images/wave-bg.svg');
+  background-size: 100% 200px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -171,11 +172,10 @@ h2{
   display: block;
   height: 220px;
   width: 100%;
-  /* min-width: 600px; */
   transform-origin: top;
   animation: animateWave 2000ms cubic-bezier(.23,1,.32,1) forwards;
   background-image: url('https://demo.templateflip.com/super/images/wave-bg.svg');
-  background-position: center;
+  background-size: 100% 200px;
   background-repeat: no-repeat;
   filter: invert(100%);
 }

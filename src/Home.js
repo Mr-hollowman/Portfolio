@@ -6,7 +6,7 @@ import DarkModeToggle from "react-dark-mode-toggle";
 import ProfessionalSkill from './ProfessionalSkill';
 
 function Home() {
-    const [isDarkMode,setIsDarkMode]=useState(()=>false)
+    const [isDarkMode,setIsDarkMode]=useState(false)
 
     return (
         <div className={isDarkMode?"body-dark":"body"}>
@@ -26,30 +26,22 @@ function Home() {
             <div className={isDarkMode?"cover text-center mydark":'myColor cover text-center'} id='heading'>
                 <h1 className='myName'>Hai<span style={{'fontSize':30}}>&#128075;</span>, This is Selvaguru</h1>
                 <p>Software Developer </p> 
-
             </div>
         <div className={isDarkMode?'wave-bg-dark':'wave-bg'}></div>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-sm-5'>
-                        {/* <div className='img-wrapper'>
-                            <img src={Myphoto}
-                                alt='myphoto'
-                                width='300px'
-                                height='300px'></img>
-                        </div><br /><br/> */}
-                        <Image /><br /><br />
+                    <div className='col-sm-5 mb-5'>
+                        <Image />
                     </div>
-                    <div className='col-sm-7'>
+                    <div className='col-sm-7 mt-5'>
                         <h2 className='myskills'>Career Objective</h2>
                         <br></br>
                         <p className='skills'>Looking for an entry-level position as a Software Engineer in a dynamic firm that values my analytical and technical skills and provides scope for updating my knowledge, I seek a company that will help me contribute to its development while concurrently aiding my personal growth.</p>
                     </div>
-
                 </div>
             </div>
             <div className='container'>
-                <div className='row'>
+                <div className='row mt-5'>
                     <div className='col-sm-6'>
                         <h2 className='myskills'>Technical Skills</h2>
                         <br />
@@ -71,9 +63,9 @@ function Home() {
                     <div className='col-sm-12'>
                         <h2 className='myskills'>Professional Skills</h2><br/>
                             <ProfessionalSkill />
-                    </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br/>
-                    <div className='col-sm-12'>
-                         <h2 className='myskill'>Certificates</h2><br></br>
+                    </div>
+                    <div className='col-sm-12 mt-5'>
+                         <h2 className='myskill mt-5'>Certificates</h2><br></br>
                          <img className='certificate' src={Certificate} alt='certificate'/>
                     </div>
                     <div className='col-sm-12 top'>
@@ -182,7 +174,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <br />
+            
             <div className={isDarkMode?"mycolor mydark footer ":'footer myColor text-center'} id='footer'>
                 <ul className='nav justify-content-center'>
                     {/* <li className='nav-item'>

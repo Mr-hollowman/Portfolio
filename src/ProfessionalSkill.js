@@ -3,8 +3,7 @@ import { ProgressBar } from 'react-bootstrap';
 
 export default function ProfessionalSkill() {
   return (
-    <div>
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between mb-5'>
         <div className='progresses' >
             <label>HTML</label>
             <ProgressBar animated now={75} />
@@ -21,7 +20,6 @@ export default function ProfessionalSkill() {
             <label>Firebase</label>
             <ProgressBar animated now={40} />
         </div>
-    </div>
     </div>
   )
 }
